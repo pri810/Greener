@@ -1,13 +1,13 @@
-import interior from '../img/interior-home-plant-in-pot-png.webp'
-function BestSellingCard() {
+
+function BestSellingCard ({cards}) {
     return (
         <div class="plantCard">
             <div class="thumbnail">
-                <img src={interior} alt="" />
+                <img src={cards.img} alt="" />
             </div>
             <div class="info">
-                <h3>Plant 1</h3>
-                <p>Lorem Ipsum Dolor<br /> Sit Amet.</p>
+                <h3>{cards.desc}</h3>
+                <p>{cards.price}</p>
                 <span class="price">$20,00</span>
                 <a href="" class="button">Buy now</a>
             </div>
